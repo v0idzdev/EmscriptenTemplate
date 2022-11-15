@@ -8,8 +8,14 @@
  ./install.sh
  ```
  
- ## Compiling
- This template uses GNU make. Simply run `make` to compile to `src/main.c` to WebAssembly. Run the compiled webpage by opening a browser on `localhost:8000`. Select `main.html`.
+ ## Prerequisites 
+ * Python 3
+ * Linux
+ 
+ ## Compiling & Running
+ * Run `source emsdk/emsdk_env.sh`.
+ * Run `make` to compile to `src/main.c` to WebAssembly.
+ * Run the compiled webpage by opening a browser on `localhost:8000`. Select `main.html`.
  
  ## Tips
  * In `Makefile`, remove `all: main server` to stop hosting a test server automatically. If you do this, you must run `make main` and `make server` separately.

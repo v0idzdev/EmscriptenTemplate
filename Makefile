@@ -1,18 +1,17 @@
-CC     = emcc
-RM     = rm
-PY     = python3
-SRC    = src
-BIN    = bin
-SERVER = http.server
-MAIN   = main
+CC     := emcc
+RM     := rm
+PY     := python3
+SRC    := src
+BIN    := bin
+SERVER := http.server
 
-all: $(MAIN) server
+all: index server
 
 server:
 	$(PY) -m $(SERVER) -d $(BIN)
 
-$(MAIN): $(SRC)/$(MAIN).c
-	$(CC) $(SRC)/$(MAIN).c -o $(BIN)/$(MAIN).html
+index:
+	$(CC) $(SRC)/index.c -o $(BIN)/index.html
 
 .PHONY: clean
 

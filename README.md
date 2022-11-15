@@ -13,7 +13,7 @@
  ```
  
  #### Compilation
- ```
+ ```bash
  source env/emsdk/emsdk_env.sh  # Without this, `make` will fail.
  make
  ```

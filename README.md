@@ -5,6 +5,8 @@
  
  #### Installation
  ```bash
+ git clone https://github.com/matthewflegg/EmscriptenTemplate
+ cd EmscriptenTemplate
  chmod +x ./install.sh
  ./install.sh
  ```
